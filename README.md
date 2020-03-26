@@ -51,6 +51,10 @@ Clients must pass their API key via the Authorization header. It must be formatt
 `Authorization: Api-Key ********`
 where `********` refers to the generated API key.
 
+`http://127.0.0.1:8000/api/` - list of the apps
+
+`http://127.0.0.1:8000/api/app_name` - data of the 'app_name' app
+
 You can use different HTTP clients for working with API, for instance, it can be `curl`, [HTTPie](https://httpie.org/) or [Postman](https://www.postman.com/).
 I've provided the examples with HTTPie.
 #### Get list of all apps
