@@ -5,5 +5,5 @@ from .models import Apps
 class AppsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Apps
-        fields = ('id', 'title', 'description', 'api_key')
-        read_only_fields = ('api_key',)
+        fields = ('id', 'title', 'description', 'api_key', 'created_date')
+        read_only_fields = ('id', 'api_key', 'created_date')
